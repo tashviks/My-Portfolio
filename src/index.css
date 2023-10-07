@@ -1,5 +1,6 @@
 body {
-  background: url(https://images.frandroid.com/wp-content/uploads/2019/12/windows-10-wallpaper.jpg);
+  /* background: url(https://images.frandroid.com/wp-content/uploads/2019/12/windows-10-wallpaper.jpg); */
+  background: url(./assets/background\ 1.jpg);
   background-size:cover;
   background-position: center;
   margin: 0;

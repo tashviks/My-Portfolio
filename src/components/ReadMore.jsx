@@ -5,7 +5,7 @@ const ReadMore = (props) => {
     <div className='popup'>
         <div className="popup-inner">
             <div className="top-con">
-            <button className="close-btn" onClick={()=>props.setTrigger(false)}><i className='fas fa-times'></i></button>
+            <button className="close-btn" onClick={()=>props.setTrigger(false)}><i className='fas fa-times' style={{border : "none"}}></i></button>
             </div>
             {props.children}
         </div>

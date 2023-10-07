@@ -7,7 +7,7 @@ const Footer = () => {
 <Taskbar>
 <div class="taskbar">
     <div class="start-button">
-        <img src={start} alt="Start Button" className='ikon'/>
+        <a href='main'><img src={start} alt="Start Button" className='ikon'/></a>
     </div>
 </div>
 <Date></Date>

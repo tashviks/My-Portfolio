@@ -13,7 +13,10 @@ import Resume from './Resume';
 import Profiles from './Profiles';
 import Projects from './Projects';
 import birdie from '../assets/Birdie.jpg';
+import Me from '../assets/Me.jpeg';
 import Draggable, { DraggableCore } from 'react-draggable'
+import AnimatePage from './Misc/AnimatePage';
+
 // ES6 format
 
 
@@ -36,9 +39,11 @@ function Main() {
     const [resumePopup, setResumePopup] = useState(false);
     const [achievementsPopup, setAchievementsPopup] = useState(false);
     return (
+       
         <Container>
+            
             <div className='row-1'>
-
+<AnimatePage>
                 <div className='App'>
                     <main>
                     <Draggable>
@@ -56,7 +61,8 @@ function Main() {
                         
                     </main>
                 </div>
-
+</AnimatePage>
+<AnimatePage>  
                 <div className='App'>
                     <main>
                         <div className='image-1'>
@@ -70,7 +76,8 @@ function Main() {
                         </ReadMore>
                     </main>
                 </div>
-
+</AnimatePage>
+<AnimatePage>   
                 <div className='App'>
                     <main>
                         <div className='image-1'>
@@ -84,7 +91,8 @@ function Main() {
                         </ReadMore>
                     </main>
                 </div>
-
+</AnimatePage>
+<AnimatePage>
                 <div className='App'>
                     <main>
                     <div className='image-1'>
@@ -98,11 +106,11 @@ function Main() {
                         </ReadMore>
                     </main>
                 </div>
-
+</AnimatePage>
             </div>
 
             <div className='row-2'>
-                
+ <AnimatePage>               
                 <div className='App'>
                     <main>
                     <div className='image-1'>
@@ -116,20 +124,22 @@ function Main() {
                         </ReadMore>
                     </main>
                 </div>
-
+</AnimatePage>
             </div>
 
             <div className='info'>
-                <img src={birdie} className='birdie' />
+                <div className='birdie'></div>
                 <pre><h1>               Tashvik Srivastava</h1></pre>
                 <div className='info-data'>
-                <p>I am a full stack developer, specializing in developing (and </p>
+                <p>I am a full stack developer, specializing in developing (and</p>
                 <p>occasionally designing) stunning, high-quality applications </p>
                  <p>and websites. I want to contribute to effective solutions</p>
                   <p>that can make a difference.</p>
                 </div>
             </div>
+            
         </Container>
+        
 
     );
 }
@@ -180,9 +190,16 @@ gap : 3rem;
 }
 .birdie{
     border-radius : 50%;
+    background-image : url(${birdie});
+    background-size : cover;
     width : 200px;
     height : 200px;
     margin-left : 235px;
+    transition : all ease 0.5s;
+}
+.birdie:hover{
+    background-image: url(${Me});
+    box-shadow : 0px 0px 20px 0px rgba(204, 155, 180, 0.8);
 }
 .taskbar{
     
