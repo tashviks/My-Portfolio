@@ -140,7 +140,7 @@ function Main() {
                         <main>
                             <Draggable>
                             <div className='image-1'>
-                                <a href='https://www.linkedin.com'><img onDoubleClick={() => setAchievementsPopup(true)} src={Linkedin} /></a>
+                                <a href='https://www.linkedin.com/in/tashvik/' target='_blank'><img onDoubleClick={() => setAchievementsPopup(true)} src={Linkedin} /></a>
                                 <pre><h3><pre>  Linkedin</pre></h3></pre>
                             </div>
                             </Draggable>
