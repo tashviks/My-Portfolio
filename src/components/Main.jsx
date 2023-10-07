@@ -14,6 +14,7 @@ import Profiles from './Profiles';
 import Projects from './Projects';
 import birdie from '../assets/Birdie.jpg';
 import Me from '../assets/Me.jpeg';
+import Linkedin from '../assets/Linkedin.png';
 import Draggable, { DraggableCore } from 'react-draggable'
 import AnimatePage from './Misc/AnimatePage';
 
@@ -39,107 +40,119 @@ function Main() {
     const [resumePopup, setResumePopup] = useState(false);
     const [achievementsPopup, setAchievementsPopup] = useState(false);
     return (
-       
+
         <Container>
-            
+
             <div className='row-1'>
-<AnimatePage>
-                <div className='App'>
-                    <main>
-                    <Draggable>
-                        <div className='image-1'>
-                        <img onDoubleClick={() => setAboutPopup(true)} src={aboutIcon}/>
-                        <pre><h3>    About</h3></pre>
-                        </div>
-                    </Draggable>  
-                        <ReadMore trigger={aboutPopup} setTrigger={setAboutPopup}>
-                            <PopUp>
-                                <About/>
-                            </PopUp>
-                        </ReadMore>
-                        
-                        
-                    </main>
-                </div>
-</AnimatePage>
-<AnimatePage>  
-                <div className='App'>
-                    <main>
-                        <div className='image-1'>
-                        <img onDoubleClick={() => setProjectsPopup(true)} src={proIcon} />
-                        <pre><h3>  Projects</h3></pre>
-                        </div>
-                        <ReadMore trigger={projectsPopup} setTrigger={setProjectsPopup}>
-                            <PopUp>
-                                <Projects/>
-                            </PopUp>
-                        </ReadMore>
-                    </main>
-                </div>
-</AnimatePage>
-<AnimatePage>   
-                <div className='App'>
-                    <main>
-                        <div className='image-1'>
-                        <img onDoubleClick={() => setProfilePopup(true)} src={profiles} />
-                        <pre><h3>   Profile</h3></pre>
-                        </div>
-                        <ReadMore trigger={profilePopup} setTrigger={setProfilePopup}>
-                            <PopUp>
-                                <Profiles/>
-                            </PopUp>
-                        </ReadMore>
-                    </main>
-                </div>
-</AnimatePage>
-<AnimatePage>
-                <div className='App'>
-                    <main>
-                    <div className='image-1'>
-                        <img onDoubleClick={() => setResumePopup(true)} src={resumeIcon} />
-                        <pre><h3>   Resume</h3></pre>
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <Draggable>
+                                <div className='image-1'>
+                                    <img onDoubleClick={() => setAboutPopup(true)} src={aboutIcon} />
+                                    <pre><h3>    About</h3></pre>
+                                </div>
+                            </Draggable>
+                            <ReadMore trigger={aboutPopup} setTrigger={setAboutPopup}>
+                                <PopUp>
+                                    <About />
+                                </PopUp>
+                            </ReadMore>
+
+
+                        </main>
                     </div>
-                        <ReadMore trigger={resumePopup} setTrigger={setResumePopup}>
-                            <PopUp>
-                                <Resume/>
-                            </PopUp>
-                        </ReadMore>
-                    </main>
-                </div>
-</AnimatePage>
+                </AnimatePage>
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <div className='image-1'>
+                                <img onDoubleClick={() => setProjectsPopup(true)} src={proIcon} />
+                                <pre><h3>  Projects</h3></pre>
+                            </div>
+                            <ReadMore trigger={projectsPopup} setTrigger={setProjectsPopup}>
+                                <PopUp>
+                                    <Projects />
+                                </PopUp>
+                            </ReadMore>
+                        </main>
+                    </div>
+                </AnimatePage>
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <div className='image-1'>
+                                <img onDoubleClick={() => setProfilePopup(true)} src={profiles} />
+                                <pre><h3>   Profile</h3></pre>
+                            </div>
+                            <ReadMore trigger={profilePopup} setTrigger={setProfilePopup}>
+                                <PopUp>
+                                    <Profiles />
+                                </PopUp>
+                            </ReadMore>
+                        </main>
+                    </div>
+                </AnimatePage>
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <div className='image-1'>
+                                <img onDoubleClick={() => setResumePopup(true)} src={resumeIcon} />
+                                <pre><h3>   Resume</h3></pre>
+                            </div>
+                            <ReadMore trigger={resumePopup} setTrigger={setResumePopup}>
+                                <PopUp>
+                                    <Resume />
+                                </PopUp>
+                            </ReadMore>
+                        </main>
+                    </div>
+                </AnimatePage>
             </div>
 
             <div className='row-2'>
- <AnimatePage>               
-                <div className='App'>
-                    <main>
-                    <div className='image-1'>
-                        <img onDoubleClick={() => setAchievementsPopup(true)} src={achievementIcon} />
-                        <pre><h3>Achievements</h3></pre>
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <div className='image-1'>
+                                <img onDoubleClick={() => setAchievementsPopup(true)} src={achievementIcon} />
+                                <pre><h3>Achievements</h3></pre>
+                            </div>
+                            <ReadMore trigger={achievementsPopup} setTrigger={setAchievementsPopup}>
+                                <PopUp>
+                                    <Achievements />
+                                </PopUp>
+                            </ReadMore>
+                        </main>
                     </div>
-                        <ReadMore trigger={achievementsPopup} setTrigger={setAchievementsPopup}>
-                            <PopUp>
-                                <Achievements/>
-                            </PopUp>
-                        </ReadMore>
-                    </main>
-                </div>
-</AnimatePage>
+                </AnimatePage>
+
+                <AnimatePage>
+                    <div className='App'>
+                        <main>
+                            <div className='image-1'>
+                                <a href='https://www.linkedin.com'><img onDoubleClick={() => setAchievementsPopup(true)} src={Linkedin} /></a>
+                                <pre><h3><pre>  Linkedin</pre></h3></pre>
+                            </div>
+                        </main>
+                    </div>
+                </AnimatePage>
             </div>
+
 
             <div className='info'>
                 <div className='birdie'></div>
                 <pre><h1>               Tashvik Srivastava</h1></pre>
                 <div className='info-data'>
-                <p>I am a full stack developer, specializing in developing (and</p>
-                <p>occasionally designing) stunning, high-quality applications </p>
-                 <p>and websites. I want to contribute to effective solutions</p>
-                  <p>that can make a difference.</p>
+                    <p>I am a full stack developer, specializing in developing (and</p>
+                    <p>occasionally designing) stunning, high-quality applications </p>
+                    <p>and websites. I want to contribute to effective solutions</p>
+                    <p>that can make a difference.</p>
                 </div>
             </div>
-            
+
         </Container>
-        
+
 
     );
 }
@@ -160,7 +173,11 @@ gap : 3rem;
     flex-direction : column;
     gap : 3rem;
 }
-
+.row-2{
+    display : flex;
+    flex-direction : column;
+    gap : 3rem;
+}
 .image-1{
     padding : 0px;
     transition : all ease 1s;
