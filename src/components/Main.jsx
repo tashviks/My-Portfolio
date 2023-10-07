@@ -66,10 +66,12 @@ function Main() {
                 <AnimatePage>
                     <div className='App'>
                         <main>
+                            <Draggable>
                             <div className='image-1'>
                                 <img onDoubleClick={() => setProjectsPopup(true)} src={proIcon} />
                                 <pre><h3>  Projects</h3></pre>
                             </div>
+                            </Draggable>
                             <ReadMore trigger={projectsPopup} setTrigger={setProjectsPopup}>
                                 <PopUp>
                                     <Projects />
@@ -81,10 +83,12 @@ function Main() {
                 <AnimatePage>
                     <div className='App'>
                         <main>
+                            <Draggable>
                             <div className='image-1'>
                                 <img onDoubleClick={() => setProfilePopup(true)} src={profiles} />
                                 <pre><h3>   Profile</h3></pre>
                             </div>
+                            </Draggable>
                             <ReadMore trigger={profilePopup} setTrigger={setProfilePopup}>
                                 <PopUp>
                                     <Profiles />
@@ -96,10 +100,12 @@ function Main() {
                 <AnimatePage>
                     <div className='App'>
                         <main>
+                            <Draggable>
                             <div className='image-1'>
                                 <img onDoubleClick={() => setResumePopup(true)} src={resumeIcon} />
                                 <pre><h3>   Resume</h3></pre>
                             </div>
+                            </Draggable>
                             <ReadMore trigger={resumePopup} setTrigger={setResumePopup}>
                                 <PopUp>
                                     <Resume />
@@ -114,10 +120,12 @@ function Main() {
                 <AnimatePage>
                     <div className='App'>
                         <main>
+                            <Draggable>
                             <div className='image-1'>
                                 <img onDoubleClick={() => setAchievementsPopup(true)} src={achievementIcon} />
                                 <pre><h3>Achievements</h3></pre>
                             </div>
+                            </Draggable>
                             <ReadMore trigger={achievementsPopup} setTrigger={setAchievementsPopup}>
                                 <PopUp>
                                     <Achievements />
@@ -130,10 +138,12 @@ function Main() {
                 <AnimatePage>
                     <div className='App'>
                         <main>
+                            <Draggable>
                             <div className='image-1'>
                                 <a href='https://www.linkedin.com'><img onDoubleClick={() => setAchievementsPopup(true)} src={Linkedin} /></a>
                                 <pre><h3><pre>  Linkedin</pre></h3></pre>
                             </div>
+                            </Draggable>
                         </main>
                     </div>
                 </AnimatePage>
