@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AnimatedCursor from "react-animated-cursor";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AnimatedCursor
+      innerSize={16}
+      outerSize={20}
+      color='193, 15, 111'
+      outerAlpha={0.8}
+      innerScale={0.7}
+      outerScale={2}/>
     <App />
   </React.StrictMode>
 );
