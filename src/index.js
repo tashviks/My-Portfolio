@@ -11,7 +11,7 @@ root.render(
     <AnimatedCursor
       innerSize={16}
       outerSize={20}
-      color='193, 15, 111'
+      color='255,255,255'
       outerAlpha={0.8}
       innerScale={0.7}
       outerScale={2}/>
