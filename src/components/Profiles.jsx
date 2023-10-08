@@ -8,10 +8,10 @@ const githubLink = 'https://github.com/tashviks';
 const Profiles = () => {
     return (
         <ProfileCon>
-            <a href={'https://github.com/tashviks'} target='blank'><img src={github} alt="Profile 1" className='image' /></a>
-            <a href={'https://www.codechef.com/users/tashvik'} target='blank'><img src={codechef} alt="Profile 2" className='image'/></a>
-            <a href={'https://codeforces.com/profile/tsvk'} target='blank'><img src={codeforces} alt="Profile 3" className='image'/></a>
-            <a href={'https://leetcode.com/_tashvik_/'} target='blank'><img src={leetcode} alt="Profile 4" className='image'/></a>
+            <a href={'https://github.com/tashviks'} target='blank'><img src={github} alt="Profile 1" title='Github' className='image' /></a>
+            <a href={'https://www.codechef.com/users/tashvik'} target='blank'><img src={codechef} alt="Profile 2" title='Codechef' className='image' /></a>
+            <a href={'https://codeforces.com/profile/tsvk'} target='blank'><img src={codeforces} alt="Profile 3" title='Codeforces' className='image' /></a>
+            <a href={'https://leetcode.com/_tashvik_/'} target='blank'><img src={leetcode} alt="Profile 4" title='Leetcode' className='image' /></a>
         </ProfileCon>
     );
 };
@@ -36,6 +36,7 @@ padding-bottom : 50px;
 .image:hover{
     scale: 1.2;
     box-shadow: 0 0 20px #000;
+    filter: blur(1px);
 }
 `;
 export default Profiles;

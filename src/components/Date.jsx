@@ -22,11 +22,10 @@ const CurrentDate = () => {
   );
 };
 const DateTime = styled.div`
-margin-right : 0px;
-margin-left : 1900px;
+margin-right :auto;
+margin-left : 1850px;
 color: white;
-font-size: 25px;
-font-weight: bold;
+font-size: 20px;
 font-family: 'Roboto', sans-serif;
 `;
 export default CurrentDate;

@@ -167,9 +167,7 @@ function Main() {
     );
 }
 
-
 const PopUp = styled.div`
-
 `;
 
 const Container = styled.div`

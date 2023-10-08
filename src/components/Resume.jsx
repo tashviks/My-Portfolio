@@ -5,7 +5,7 @@ function App() {
 
 	return (
 		<CVContainer>
-	    <iframe src="https://sapphire-issie-30.tiiny.site/" frameborder="0"></iframe>
+			<iframe src="https://sapphire-issie-30.tiiny.site/" frameborder="0"></iframe>
 		</CVContainer>
 	);
 }

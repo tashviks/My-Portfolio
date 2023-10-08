@@ -1,14 +1,14 @@
 import React from 'react';
 import './ReadMore.css';
 const ReadMore = (props) => {
-  return (props.trigger)?(
+  return (props.trigger) ? (
     <div className='popup'>
-        <div className="popup-inner">
-            <div className="top-con">
-            <button className="close-btn" onClick={()=>props.setTrigger(false)}><i className='fas fa-times' style={{border : "none"}}></i></button>
-            </div>
-            {props.children}
+      <div className="popup-inner">
+        <div className="top-con">
+          <button className="close-btn" onClick={() => props.setTrigger(false)}><i className='fas fa-times' style={{ border: "none" }}></i></button>
         </div>
+        {props.children}
+      </div>
     </div>
   ) : "";
 }

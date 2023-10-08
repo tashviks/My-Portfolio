@@ -4,42 +4,42 @@ import styled from 'styled-components';
 
 import bubble from '../assets/bubble.jpg';
 import disease from '../assets/disease.jpg';
-import snuggle from '../assets/snuggle.jpg';  
+import snuggle from '../assets/snuggle.jpg';
 import projection from '../assets/ProjectiON.png';
 import MyWeb from '../assets/MyWeb.png';
 
 const Projects = () => {
-  return (
-    <ProjCon>
- <div id="projects">
-		<div id="procon">
-			<div class="child">
-				<img src={snuggle} title="A chat app using MERN+Socket.io"/>
-				<div class="child-bottom"><a href='https://github.com/tashviks/Chat-Application' target='blank'><img src={github} alt="failed to load image"/></a></div>
-			</div>
-			<div class="child">
-				<img src={bubble} title="Bubble Game using HTML,CSS & JS"/>
-				<div class="child-bottom">
-					<a href='https://github.com/tashviks/Bubble-Game' target='blank'><img src={github} alt="failed to load image"/></a>
+	return (
+		<ProjCon>
+			<div id="projects">
+				<div id="procon">
+					<div class="child">
+						<img src={snuggle} title="A chat app using MERN+Socket.io" />
+						<div class="child-bottom"><a href='https://github.com/tashviks/Chat-Application' target='blank'><img src={github} alt="failed to load image" /></a></div>
+					</div>
+					<div class="child">
+						<img src={bubble} title="Bubble Game using HTML,CSS & JS" />
+						<div class="child-bottom">
+							<a href='https://github.com/tashviks/Bubble-Game' target='blank'><img src={github} alt="failed to load image" /></a>
+						</div>
+					</div>
+					<div class="child">
+						<img src={disease} title='Plant Disease Detection Android App' />
+						<div class="child-bottom" href='https://github.com/tashviks/Plant-Disease-Detection-App' target='blank'><a><img src={github} alt="failed to load image" /></a></div>
+					</div>
+					<div class="child">
+						<img src={projection} title='A portal for colleges to upload projects done by students' />
+						<div class="child-bottom"><a href='https://github.com/tashviks/Project-iON' target='blank'><img src={github} alt="failed to load image" /></a></div>
+					</div>
+					<div class="child">
+						<img src={MyWeb} title="A very basic portfolio using HTML,CSS & JS" />
+						<div class="child-bottom"><a href='https://github.com/tashviks/Portfolio-Website' target='blank'><img src={github} alt="failed to load image" /></a></div>
+					</div>
+
 				</div>
 			</div>
-			<div class="child">
-				<img src={disease} title='Plant Disease Detection Android App'/>
-				<div class="child-bottom" href='https://github.com/tashviks/Plant-Disease-Detection-App' target='blank'><a><img src={github} alt="failed to load image"/></a></div>
-			</div>
-			<div class="child">
-				<img src={projection} title='A portal for colleges to upload projects done by students'/>
-				<div class="child-bottom"><a href='https://github.com/tashviks/Project-iON' target='blank'><img src={github} alt="failed to load image"/></a></div>
-			</div>
-            <div class="child">
-				<img src={MyWeb} title="A very basic portfolio using HTML,CSS & JS"/>
-				<div class="child-bottom"><a href='https://github.com/tashviks/Portfolio-Website' target='blank'><img src={github} alt="failed to load image"/></a></div>
-			</div>
-            
-		</div>
-	</div>
-</ProjCon>
-  )
+		</ProjCon>
+	)
 }
 
 const ProjCon = styled.div`
